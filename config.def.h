@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font :pixelsize=15:antialias=true:autohint=true";
-static char *font2[] = { "JetBrainsMono Nerd Font :pixelsize=15:antialias=true:autohint=true" };
-static int borderpx = 0;
+static char *font = "JetBrainsMono Nerd Font :pixelsize=16:antialias=true:autohint=true";
+static char *font2[] = { "CaskaydiaCove Nerd Font :pixelsize=16:antialias=true:autohint=true" };
+static int borderpx = 5;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -111,35 +111,37 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 1.0;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  "#cc241d",
-  "#98971a",
-  "#d79921",
-  "#458588",
-  "#b16286",
-  "#689d6a",
-  "#a89984",
-  "#928374",
-  "#fb4934",
-  "#b8bb26",
-  "#fabd2f",
-  "#83a598",
-  "#d3869b",
-  "#8ec07c",
-  "#ebdbb2",
+
+	"#4C566A",
+	"#e06c75",
+	"#98c379",
+	"#d19a66",
+	"#61afef",
+	"#c678dd",
+	"#56b6c2",
+	"#dddddd",
+	"#4C566A",
+	"#e06c75",
+	"#98c379",
+	"#d19a66",
+	"#61afef",
+	"#c678dd",
+	"#56b6c2",
+	"#dddddd",
+
   [255] = 0,
   /* more colors can be added after 255 to use with DefaultXX */
-  "#add8e6", /* 256 -> cursor */
+  "#ABB2BF", /* 256 -> cursor */
   "#555555", /* 257 -> rev cursor*/
-  "#282828", /* 258 -> bg */
-  "#ffffff", /* 259 -> fg */
+  "#1F2227", /* 258 -> bg */
+  "#ABB2BF", /* 259 -> fg */
 };
 
 
